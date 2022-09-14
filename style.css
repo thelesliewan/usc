@@ -1,0 +1,36 @@
+.mainContainer {
+    background-color:rgb(245, 231, 231);
+    width: 1230px;
+}
+
+.topNav {
+    display: flex;
+    list-style: none;
+    width: 240px;
+    justify-content: space-between;
+}
+
+.imgContainer {
+    width: 400px;
+}
+
+.sideBySidePhotos {
+    display: flex;
+    flex-direction: row;
+}
+
+.pageHeader {
+    border: rosybrown 5px solid;
+    padding: 5px;
+    width: max-content;
+}
+
+.descriptionContainer {
+    background-color: rgb(193, 138, 138);
+    color: white;
+}
+
+.allImages {
+    display: flex;
+    justify-content: space-between;
+}
