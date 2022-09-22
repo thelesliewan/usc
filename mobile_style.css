@@ -1,0 +1,92 @@
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        margin: 10px;
+    }
+
+    body {
+        margin: 0;
+        font-size: 18px;
+        background-color: #a8d7ec;
+        font-family: sans-serif;
+    }
+
+    .backgroundImage {
+        position: absolute;
+        z-index: -1;
+        right: 1;
+    }
+
+    .mobileVisible {
+        display: visible;
+    }
+
+    .topNav {
+        background-color: rgb(195, 230, 249);
+    }
+
+    .navLink {
+        color: black;
+        font-weight: bold;
+        text-decoration-line: none;
+    }
+    
+    .imgContainer {
+        width: 400px;
+        padding: 10px;
+    }
+    
+    .sideBySidePhotos {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .pageHeader {
+        border: darkblue 5px solid;
+        padding: 5px;
+        width: max-content;
+    }
+    
+    .allImages {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+  
+@media screen and (min-width: 769px) {
+    .topNav {
+        display: flex;
+        list-style: none;
+        width: 240px;
+        justify-content: space-between;
+    }
+    
+    .mobileVisible {
+        display: none;
+    }
+
+    .imgContainer {
+        width: 400px;
+    }
+    
+    .sideBySidePhotos {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .pageHeader {
+        border: rosybrown 5px solid;
+        padding: 5px;
+        width: max-content;
+    }
+    
+    .descriptionContainer {
+        background-color: rgb(193, 138, 138);
+        color: white;
+    }
+    
+    .allImages {
+        display: flex;
+        justify-content: space-between;
+    }    
+}
