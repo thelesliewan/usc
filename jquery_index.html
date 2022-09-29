@@ -1,0 +1,55 @@
+<html lang=“en”>
+<head>
+    <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+    <title>Interest and Hobbies</title>
+    <link rel=“stylesheet” href=“mobile_style.css”>
+    <script src=“https://code.jquery.com/jquery-3.6.1.js” integrity=“sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=” crossorigin=“anonymous”></script>
+    <script>
+      $(document).ready(function() {
+        $(".pageHeader").click(function() {
+          $(".descriptionContainer").toggle();
+        });
+        $(".descriptionContainer").click(function() {
+          $(".topNav").css("background-color", "red");
+        });
+        $("#fadeImages").click(function() {
+          $(".allImages").fadeToggle();
+        });
+        $("#self_portrait").mouseenter(function() {
+          $("body").css("border", "10px solid green");
+        });
+        $("#self_portrait").mouseleave(function() {
+          $("body").css("border", "none");
+        });
+      });
+    </script>
+</head>
+<body>
+    <div class=“backgroundImage mobileVisible”>
+        <img height=“1600px” src=“cropped_waves.png” />
+    </div>
+    <div class=“topNav”>
+        <div><a class=“navLink” href=“index.html”>Home</a></div>
+        <div><a class=“navLink” href=“contentCreation.html”>Content Creation</a></div>
+        <div><a class=“navLink” href=“travel.html”>Travel</a></div>
+    </div>
+    <div class=“mainContainer”>
+        <h1 class=“pageHeader”>Home</h1>
+        <div class=“descriptionContainer”>
+            <div>Hi, my name is Leslie. I like to do content creation and travel!</div>
+            <div>I’m from the Bay Area and now I live in New York City. I went to UC Riverside and then transferred to Boston University.</div>
+            <hr />
+            <div>Now I’m working as a consultant at a bank.</div>
+            <div class=“mobileVisible”>In my spare time I like to go try new restrauraunts, go discover cute new coffee shops, and travel.</div>
+        </div>
+        <hr/>
+        <button id=“fadeImages”>Fade Images</button>
+        <hr/>
+        <div class=“allImages”>
+            <img id=“self_portrait” src=“self_portait.jpeg” class=“imgContainer” alt=“self portrait” />
+            <img src=“bu_photo.png” class=“imgContainer” alt=“bu photo” />
+            <img src=“ucr.png” class=“imgContainer” alt=“ucr photo” />
+        </div>
+    </div>
+</body>
+</html>
